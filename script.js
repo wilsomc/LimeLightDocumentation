@@ -1,1 +1,1 @@
-document.write("This is a JS Code");
+document.write("Wilson made this");
