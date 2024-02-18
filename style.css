@@ -1,0 +1,71 @@
+body{
+    background-color: white;
+}
+ul{
+    font-size: x-large;
+}
+pre{
+    white-space: pre-wrap;
+    line-height: 0.00000000000000000000000000000000000000000000001%;
+    font-family: Cambria;
+}
+span{
+    white-space: pre;
+}
+code{
+    font-size: 15px;
+    display: block;
+}
+div{
+    line-height: 5px;
+}
+.space{
+    font-size: 25px;
+    line-height: 10px;
+}
+.small{
+    font-size: 13px;
+}
+.format{
+    font-family: 'Courier New';
+    font-weight: bold;    
+    text-indent: 48px;
+    font-size: 13px;
+}
+em {
+    font-style: unset;
+    font-weight: normal;
+    font-family: Arial;
+}
+.button{
+    margin-left: 50px;
+    margin-right: 0;
+    margin-bottom: 0;
+}
+.buttonA{
+    margin-right: 0;
+    margin-bottom: 0;
+}
+/* actual methods*/
+.formatMethod{
+    font-family: 'Courier New';
+    font-weight: bold;    
+    font-size: 13px;
+    margin-bottom: 1em;
+    margin-right: 5em;
+}
+/* left methods*/
+.emMethod {
+    font-style: unset;
+    font-weight: normal;
+    font-family: 'Courier New';
+}
+.ulmethod {
+    margin-top: 0;
+    margin-bottom: 5px;
+    margin-left: 50px;
+    list-style-type: none;
+    padding: 0;
+}
+
+

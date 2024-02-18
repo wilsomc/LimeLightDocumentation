@@ -1,0 +1,229 @@
+<html>
+    <p>
+        Package frc.robot.subsystems
+    </p>
+
+    <head>
+        <title>LimeLightSub Documentation</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <h1>
+            Class LimeLightSub
+        </h1>
+        <hr>
+        <p>
+            public class
+            <a href="Links/LimeLightSub.txt">LimeLightSub</a>
+            <br>
+            extends <a href="https://first.wpi.edu/wpilib/allwpilib/docs/release/java/edu/wpi/first/wpilibj2/command/SubsystemBase.html">SubsystemBase</a>
+            </br>
+            <br class="space">
+                Implements a LimeLightSubsystem.
+            </br>
+        </p>
+        <h2 style="text-indent: 25px;">
+            <li>
+                <strong>
+                    Constructor Summary
+                </strong>
+            </li>
+        </h2>
+        <pre><code>
+                                                            Constructors
+        </code></pre>
+        <div>
+            <p>
+               <strong>
+                    <span>
+            Constructor                                                                             Description
+                    </span>
+                    </strong> 
+            </p>
+        </div>
+        <p class="format">
+            LimeLightSub(String limelight_networktable_name) 
+            <em>
+                &nbspAllocates a LimeLightSub with the given NetworkTable.
+            </em>
+        </p>
+        <h2 style="text-indent: 25px;">
+            <li>
+                <strong>
+                    Method Summary
+                </strong>
+            </li>
+        </h2>
+        <button class="button">
+            All Methods
+        </button>
+        <button class="buttonA">
+            Instance Methods
+        </button>
+        <button class="buttonA">
+            Concrete Methods
+        </button>
+        <h4 style="margin-top: 0; margin-left: 55px; margin-bottom: 0px">
+            <span>
+Modifer and Type                                                                                    Description
+            </span>
+            
+        </h4>
+        <ul class="ulMethod">
+            <li class="formatMethod">
+                boolean 
+                <em class="emMethod", style="margin-right: 7em; margin-left: 16em;">
+                    hasTarget()
+                </em>
+                <em>
+                    Returns if there is a detected target. Returns 0 or 1.
+                </em>
+            </li>
+            <li class="formatMethod">
+                boolean 
+                <em class="emMethod", style="margin-right: 9em; margin-left: 16em;">
+                    getTx()
+                </em>
+                <em>
+                    &nbspReturns the crosshair degree angle from the center of the target (left and right).
+                </em>
+            </li>
+            <li class="formatMethod">
+                double 
+                <em class="emMethod", style="margin-right: 9em; margin-left: 16.13em;">
+                    getID()
+                </em>
+                <em>
+                    &nbspReturns the target (Apriltag) ID decremented by 1.
+                </em>
+            </li>
+            <li class="formatMethod">
+                double 
+                <em class="emMethod", style="margin-right: 9em; margin-left: 16.5em;">
+                    getTy()
+                </em>
+                <em>
+                    &nbspReturns the crosshair degree angle from the center of the target (top and bottom).
+                </em>
+            </li>
+            <li class="formatMethod">
+                double 
+                <em class="emMethod", style="margin-right: 7em; margin-left: 16.5em;">
+                    getTheta()
+                </em>
+                <em>
+                    &nbspReturns the sum angle from robot's constant CAMERA_HEIGHT and ty.
+                </em>
+            </li>
+            <li class="formatMethod">
+                double 
+                <em class="emMethod", style="margin-right: 7em; margin-left: 16.5em;">
+                    getAngle()
+                </em>
+                <em>
+                    &nbspReturns tx value but in radians.
+                </em>
+            </li>
+            <li class="formatMethod">
+                double 
+                <em class="emMethod", style="margin-right: 5.2em; margin-left: 16.5em;">
+                    getPipeLine()
+                </em>
+                <em>
+                    &nbspReturns the current pipeline index;
+                </em>
+            </li>
+            <li class="formatMethod">
+                void 
+                <em class="emMethod", style="margin-right: 7em; margin-left: 7em;">
+                    setPipeline(double pipeline)
+                </em>
+                <em>
+                    &nbspSets the current pipeline.
+                </em>
+            </li>
+            <li class="formatMethod">
+                boolean 
+                <em class="emMethod", style="margin-right: 7.2em; margin-left: 15em;">
+                    checkPipe()
+                </em>
+                <em>
+                    &nbspReturns if is there is a pipeline.
+                </em>
+            </li>
+            <li class="formatMethod">
+                void 
+                <em class="emMethod", style="margin-right: 8.7em; margin-left: 16em;">
+                    setPoint()
+                </em>
+                <em>
+                    &nbspSets the target point of for each respective PIDController
+                </em>
+            </li>
+            <li class="formatMethod">
+                double 
+                <em class="emMethod", style="margin-right: 7.7em; margin-left: 14em;">
+                    getDistance()
+                </em>
+                <em>
+                    &nbspReturns the distance of robot from target AprilTag in meters.
+                </em>
+            </li>
+            <li class="formatMethod">
+                double 
+                <em class="emMethod", style="margin-right: 7.2em; margin-left: 14em;">
+                    getDistanceX()
+                </em>
+                <em>
+                    &nbspReturns the (forward and backward) distance of the robot from target AprilTag in meters.
+                </em>
+            </li>
+            <li class="formatMethod">
+                double 
+                <em class="emMethod", style="margin-right: 8.5em; margin-left: 12.7em;">
+                    getDistanceY()
+                </em>
+                <em>
+                    &nbspReturns the (left and right) distance of the robot from target AprilTag in meters.
+                </em>
+            </li>
+            <li class="formatMethod">
+                double 
+                <em class="emMethod", style="margin-right: 7em; margin-left: 16em;">
+                    getErrorX()
+                </em>
+                <em>
+                    &nbspReturns PIDController calculation for distanceX to target point (using botPose values).
+            </li>
+            <li class="formatMethod">
+                double 
+                <em class="emMethod", style="margin-right: 7em; margin-left: 16em;">
+                    getErrorY()
+                </em>
+                <em>
+                    &nbspReturns PIDController calculation for distanceY to target point (using botPose values).
+            </li>
+            <li class="formatMethod">
+                double 
+                <em class="emMethod", style="margin-right: 7em; margin-left: 13em;">
+                    getThetaErrorX()
+                </em>
+                <em>
+                    &nbspReturns PIDController calculation for tx to target point.
+            </li>
+            <li class="formatMethod">
+                double 
+                <em class="emMethod", style="margin-right: 7em; margin-left: 10em;">
+                    getSmoothThetaError()
+                </em>
+                <em>
+                    &nbspReturns PIDController calculation for yaw (left and right) to target point using botPose values.
+            </li>
+        </ul>
+
+
+        
+        <script src="script.js"></script>
+    </body>
+</html>
